@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="practice FRONT">
+        
+        <link rel="shortcut icon" href="../icon/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/reset.css">
+
+        <title>Instagram Copy</title>
+    </head>
+
+    <body>
+        <section class="main-container">
+                <!--phone img-->
+                <div class="phone">
+                    <img src="../img/back_phone.png" id="img_phone_back">
+                    <img src="../img/phone.png" id="img_phone">
+                </div>
+
+                <!--login box & sign up-->
+                <div class="wrapper-container">
+                    <div class="login-box">
+                        <div>
+                            <img src="../img/logo_instagram.png" id="img_logo">
+                        </div>
+
+                        <div>
+                            <input class="login-item" type="text" placeholder="전화번호, 사용자 이름 또는 메일">
+                            <input class="login-item" type="password" placeholder="비밀번호">
+                        </div>
+
+                        <div class="btn-box">
+                            <input id="btn-login" type="button" value="로그인">
+                        </div>
+
+                        <div class="hr-box">
+                            <a id="txt-hr">또는</a>
+                        </div>
+
+                        <div id="login-fb">
+                            <img src="../img/facebook.png" width="16px">
+                            <a>Facebook으로 로그인</a>
+                        </div>
+
+                        <span>
+                            <p id="forgot-pw">비밀번호를 잊으셨나요?</p>
+                        </span>
+                    </div>
+
+                    <div class="sign-up-box">
+                        <div>
+                            <a>계정이 없으신가요?</a>
+                            <a id="sign-up">가입하기</a>
+                        </div>
+                    </div>
+
+                    <div class="txt-download"><p>앱을 다운로드하세요.</p></div>
+
+                    <div class="img-download">
+                        <img src="../img/appstore.png" class="img" id="img-appstore">
+                        <img src="../img/googleplay.png" class="img" id="img-googleplay">
+                    </div>
+                </div>
+        </section>
+
+        <footer class="footer-container">
+            <!--list-->
+            <ul class="list-container">
+                <li class="list-item" id="list-introduce">소개</li>
+                <li class="list-item" id="list-help">도움말</li>
+                <li class="list-item" id="list-promotion">홍보 센터</li>
+                <li class="list-item" id="list-API">API</li>
+                <li class="list-item" id="list-inform">채용 정보</li>
+                <li class="list-item" id="list-individual">개인정보처리방침</li>
+                <li class="list-item" id="list-usage">약관</li>
+                <li class="list-item" id="list-location">위치</li>
+                <li class="list-item" id="list-popID">인기 계정</li>
+                <li class="list-item" id="list-tag">해시태그</li>
+                <li class="list-item" id="list-lang">언어</li>
+            </ul>
+
+            <a id="copyright">ⓒ 2020 INSTAGRAM FROM FACEBOOK</a>
+        </footer>
+        
+        <script>
+            const appStore = document.querySelector('#img-appstore');
+            const googlePlay = document.querySelector('#img-googleplay');
+
+            appStore.addEventListener('click', function() {
+                location.href='https://apps.apple.com/app/instagram/id389801252?vt=lo';
+            });
+
+            googlePlay.addEventListener('click', function() {
+                location.href='https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3D8A8351C3-D883-40BF-8D4D-43D8AC6E871E%26utm_content%3Dlo%26utm_medium%3Dbadge';
+            });
+        </script>
+    </body>
+</html>
