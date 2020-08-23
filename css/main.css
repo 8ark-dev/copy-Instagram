@@ -72,8 +72,8 @@ body {
 }
 
 .login-item {
-    
-    width: 80%;
+
+    width: 294px;
     height: 35px;
 
     margin: 0 auto;
@@ -83,6 +83,9 @@ body {
 
     border-radius: 3px;
     border: 1px solid #D8D8D8;
+
+    outline-style: none;
+
 }
 
 .login-item::placeholder {
@@ -90,11 +93,34 @@ body {
     font-size: 11px;
 }
 
+.login-item[type=password]{
+    width: 194px;
 
-.login-item[type=text]{}
+    padding-right: 100px;
+}
 
-.login-item[type=password]{}
+.hidden-pw {
+    visibility: hidden;
+    width: 100px;
+    height: 39px;
 
+    margin: 0px;
+    margin-left: -111px;
+
+    padding: 0px;
+
+    outline-style: none;
+
+    border: 1px solid #D8D8D8;
+    border-radius: 3px;
+    border-left: none;
+    border-right: none;
+
+    background-color: #FAFAFA;
+
+    font-weight: bold;
+    font-size: 12px;
+}
 
 #btn-login {
     width: 290px;
@@ -146,8 +172,8 @@ body {
 
 #login-fb {
 
-    margin: 10px;
-    margin-top: 30px;
+    margin: 5px 0px 10px;
+    padding-top: 10px;
 
     color: #4267B2;
 
@@ -156,10 +182,19 @@ body {
 #login-fb:hover{cursor: pointer;}
 #login-fb:active {opacity: 70%;}
 
+#hidden-login {
+    display: none;
+
+    padding-top: 5px;
+    
+    color: red;
+
+    font-size: 13px;
+}
+
 
 #forgot-pw {
-    margin-top: 20px;
-
+    padding-top: 10px;
     font-size: 13px;
 }
 #forgot-pw:hover {cursor: pointer;}
@@ -260,8 +295,17 @@ body {
     margin-left: 20px;
 }
 
-.list-item:hover {
-    cursor: pointer;
+.list-item:hover {cursor: pointer;}
+.list-item:active {opacity: 70%;}
+
+.lang-select {
+    display: none;
+    appearance: none;
+
+    position: absolute;
+
+    top : 800px;
+
 }
 
 #copyright {

@@ -29,8 +29,9 @@
                         <div>
                             <input class="login-item" type="text" placeholder="전화번호, 사용자 이름 또는 메일">
                             <input class="login-item" type="password" placeholder="비밀번호">
+                            
+                            <input class="hidden-pw" type="button" value="비밀번호 표시">
                         </div>
-
                         <div class="btn-box">
                             <input id="btn-login" type="button" value="로그인">
                         </div>
@@ -44,9 +45,12 @@
                             <span>Facebook으로 로그인</span>
                         </div>
 
-                        <span>
+                        <div id="hidden-login">
+                        </div>
+
+                        <div>
                             <p id="forgot-pw">비밀번호를 잊으셨나요?</p>
-                        </span>
+                        </div>
                     </div>
 
                     <div class="sign-up-box">
@@ -78,59 +82,26 @@
                 <li class="list-item" id="list-location">위치</li>
                 <li class="list-item" id="list-popID">인기 계정</li>
                 <li class="list-item" id="list-tag">해시태그</li>
-                <li class="list-item" id="list-lang">언어</li>
+                <li class="list-item" id="list-lang">언어
+                    <select class="lang-select">
+                        <option value="한국어" selected>한국어</option>
+                        <option value="한국어" selected>영어</option>
+                        <option value="한국어" selected>일본어</option>
+                        <option value="한국어" selected>중국어</option>
+                        <option value="한국어" selected>베트남어</option>
+                        <option value="한국어" selected>러시아어</option>
+                        <option value="한국어" selected>불어</option>
+                        <option value="한국어" selected>힌두어</option>
+                    </select>
+                </li>
             </ul>
 
             <span id="copyright">ⓒ 2020 INSTAGRAM FROM FACEBOOK</span>
         </footer>
         
-        <script>
-            const appStore = document.querySelector('#img-appstore');
-            const googlePlay = document.querySelector('#img-googleplay');
-
-            appStore.addEventListener('click', function() {
-                location.href='https://apps.apple.com/app/instagram/id389801252?vt=lo';
-            });
-
-            googlePlay.addEventListener('click', function() {
-                location.href='https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26ig_mid%3D8A8351C3-D883-40BF-8D4D-43D8AC6E871E%26utm_content%3Dlo%26utm_medium%3Dbadge';
-            });
-        </script>
-
-        <script>
-            const btn = document.querySelector('#btn-login');
-            const loginBox = document.querySelectorAll('.login-item'); // [0] : id , [1] : pw
-
-            const id_regexr =/[A-Za-z0-9]/;
-            const email_regexr = /[^[A-Za-z0-9]([_.,]?[A-Za-z0-9])*@[A-Za-z0-9].[A-Za-z]{2,3}$/i; //*은 앞이 없거나 그 이상, ?은 없거나 한개
-            const pw_regexr =/([A-Za-z0-9])(?=[^A-Za-z0-9]){6,12}/;
-            const pw_regexr_2 = /[A-Za-z0-9]/;
-
-            btn.addEventListener('blur', function() {
-                let id = loginBox[0].value;
-                let pw = loginBox[1].value;
-
-                if(id.length != 0 && pw.length >= 6) {
-                    alert('hi');
-                    btn.style.backgroundColor = '#0095F6';
-                    btn.style.opacity = '100%';
-            }
-            });
-
-            btn.addEventListener('click', function() {
-                let id = loginBox[0].value;
-                let pw = loginBox[1].value;
-
-                if (id_regexr.test(id) || email_regexr.test(id)) {
-                    //서버로 아이디 넘기기
-                }
-                if(pw_regexr.test(pw)) {
-                    //서버로 비밀번호 넘기기
-                    alert('clear');
-                }else if(pw_regexr_2.test(pw)) alert('비밀번호에는 특수문자를 포함해야 합니다');
-                //#0095F6
-                
-            });
-        </script>
+        <script src="../js/market-url.js"></script>
+        <script src="../js/login.js"></script>
+        <script src="../js/fb-url.js"></script>
+        <script src="../js/list-url.js"></script>
     </body>
 </html>
