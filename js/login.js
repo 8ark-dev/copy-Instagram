@@ -71,3 +71,13 @@ btn.addEventListener('click', function() {
         location.href = './main.html';
     }
 });
+
+
+//비밀번호 표시 false:안보임 true:보임
+flag3 = false;
+hidden2.addEventListener('click', function() {
+    flag3 = !flag3;
+
+    if(flag3) loginBox[1].setAttribute('type', 'text');
+    else loginBox[1].setAttribute('type', 'password');
+});

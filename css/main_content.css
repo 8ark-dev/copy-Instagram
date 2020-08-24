@@ -1,0 +1,23 @@
+section {
+
+    display: flex;
+
+    justify-content: center;
+}
+
+section > div {
+    
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.content {
+    width: 612px;
+    height: 780px;
+
+    margin-top: 30px;
+    
+    background-color: #FFF;
+
+    border: 1px solid #D8D8D8;
+}

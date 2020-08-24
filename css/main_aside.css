@@ -1,0 +1,18 @@
+aside {
+    margin-top: 30px;
+    position: relative;
+}
+/*
+aside > div {
+    position: fixed;
+}*/
+
+.aside-acount {
+    width: 293px;
+    height: 200px;
+
+    background-color: #FFF;
+
+    border: 1px solid #D8D8D8;
+
+}

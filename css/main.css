@@ -1,316 +1,63 @@
 body {
     background-color: #FAFAFA;
-
-    
 }
 
-/*main*/
-.main-container {
-    height: 754px;
-
-    margin-top: 100px;
-
-    display: flex;
-    
-    justify-content: center;
-}
-
-/*좌측박스*/
-.phone {
-    width: 400px;
-    margin: 10px;
-
-    position: relative;
-}   
-
-#img_phone {
-    width: 100%;
-    position: absolute;
-
-    padding-left: 80px;
-    padding-top: 20px;
-}
-
-#img_phone_back {
-    width: 100%;
-
-    position: absolute;
-    
-    top: 0px;
-}
-
-
-
-/*우측박스*/
-.wrapper-container {
-    width: 450px;
-
-    margin: 10px;
-
-    overflow: hidden;
-
-    text-align: center;
-
-    font-size: 15px;
-}
-
-#img_logo {
-    width: 50%;
-
-    margin: 30px auto;
-}
-
-
-.login-box {
-    width: 80%;
-    height: 55%;
-
-    margin: 0 auto;
+header{
+    height: 53px;
 
     background-color: white;
-    border: 1px solid #D8D8D8;
-}
 
-.login-item {
-
-    width: 294px;
-    height: 35px;
-
-    margin: 0 auto;
-    margin: 5px;
-
-    background-color: #FAFAFA;
-
-    border-radius: 3px;
-    border: 1px solid #D8D8D8;
-
-    outline-style: none;
-
-}
-
-.login-item::placeholder {
-    padding-left: 10px;
-    font-size: 11px;
-}
-
-.login-item[type=password]{
-    width: 194px;
-
-    padding-right: 100px;
-}
-
-.hidden-pw {
-    visibility: hidden;
-    width: 100px;
-    height: 39px;
-
-    margin: 0px;
-    margin-left: -111px;
-
-    padding: 0px;
-
-    outline-style: none;
-
-    border: 1px solid #D8D8D8;
-    border-radius: 3px;
-    border-left: none;
-    border-right: none;
-
-    background-color: #FAFAFA;
-
-    font-weight: bold;
-    font-size: 12px;
-}
-
-#btn-login {
-    width: 290px;
-    height: 35px;
-
-    margin: 10px;
-
-    border-radius: 3px;
-    border: none;
-
-    background-color: #81BEF7;
-
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-
-    line-height: 35px;
-
-    opacity: 50%;
-
-}
-
-.btn-box {margin: 10px;}
-.hr-box  {margin: 10px;}
-
-#txt-hr {color: #8E8E8E; font-size: 14px; font-weight: bold;}
-#txt-hr::before {
-    width: 110px;
-
-    margin-right: 20px;
-
-    display: inline-block;
-    border-top: 1px solid #D8D8D8;
-    content: " "; 
-
-    transform: translateY(-4px);
-}
-#txt-hr::after {
-    width: 110px;
-
-    margin-left: 20px;
-
-    display: inline-block;
-    border-top: 1px solid #D8D8D8;
-    content: " "; 
-
-    transform: translateY(-4px);
-}
-
-#login-fb {
-
-    margin: 5px 0px 10px;
-    padding-top: 10px;
-
-    color: #4267B2;
-
-    font-weight: bold;
-}
-#login-fb:hover{cursor: pointer;}
-#login-fb:active {opacity: 70%;}
-
-#hidden-login {
-    display: none;
-
-    padding-top: 5px;
-    
-    color: red;
-
-    font-size: 13px;
-}
-
-
-#forgot-pw {
-    padding-top: 10px;
-    font-size: 13px;
-}
-#forgot-pw:hover {cursor: pointer;}
-#forgot-pw:active {opacity: 70%;}
-
-
-.txt-download {
-    height: 5%;
-
-    margin: 10px auto;
-
-    line-height: 30px;
-}
-
-
-/*SIGN-UP*/
-
-.sign-up-box {
-    width: 80%;
-    height: 10%;
-
-    margin: 0 auto;
-    margin-top: 10px;
+    border-bottom: 1px solid #D8D8D8;
 
     display: flex;
-    justify-content: center;
+
+    justify-content: space-around;
     align-items: center;
-
-    background-color: white;
-    border: 1px solid #D8D8D8;
-
-    font-size: 15px;
 }
 
-.sign-up-box div {
-    height: 50%;
+/*왼쪽 상단 로고*/
+#header-logo {
+    width: 100px;
 
-    line-height: 36.69px;
-}
+    background-size: contain;
 
-#sign-up {
-    margin-left: 5px;
-
-    color: #0095F6;
-
-    font-weight: bold;
-}
-#sign-up:hover{cursor: pointer;}
-#sign-up:active{opacity: 70%;}
-
-/*앱스토어, 구글플레이*/
-
-.img-download {
-    height: 5%;
-
-    margin: 0 auto;
 
 }
 
-.img {
-    width: 28%;
-    height: 100%;
-}
+/*검색창*/
+#header-search {
+    width: 50px;
+    height: 25px;
 
-.img:hover {
-    cursor: pointer;
-}
-
-
-
-
-
-/*footer*/
-.footer-container {
-
-    margin-top: 20px;
-
-    display: flex;
-    justify-content: center;
-
-    font-size: 12px;
-    line-height: 25px;
+    padding-left: 50px;
     
-    overflow: auto;
+    background-color: #FAFAFA;
+    
+    outline-style: none;
+
+    border: 1px solid #D8D8D8;
+    border-radius: 3px;
+
+    font-size: 13px;
 }
 
-.list-container {
-    list-style: none;
+#header-search::placeholder {
+    padding-left: 20px;
+}
+
+#btn-search {
+
+    height: 25px;
+    margin-left: -100px;
+
+}
+
+/*우측 상단 버튼*/
+header ul {
+    width: 150px;
 
     display: flex;
-    justify-content: left;
 
-    font-weight: bold;
-    color: darkblue;
+    justify-content: space-around;
 }
 
-.list-item {
-    margin-left: 20px;
-}
-
-.list-item:hover {cursor: pointer;}
-.list-item:active {opacity: 70%;}
-
-.lang-select {
-    display: none;
-    appearance: none;
-
-    position: absolute;
-
-    top : 800px;
-
-}
-
-#copyright {
-    padding-left: 200px;
-
-    color: gray;
-    font-weight: bold;
-}
