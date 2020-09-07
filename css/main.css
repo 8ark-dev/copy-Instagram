@@ -24,10 +24,17 @@ header{
 
 }
 
+.header-item {
+    width: 267px;
+}
+
 /*검색창*/
 #header-search {
-    width: 50px;
-    height: 25px;
+    position: relative;
+    top:10px;
+    
+    width: 215px;
+    height: 28px;
 
     padding-left: 50px;
     
@@ -42,15 +49,22 @@ header{
 }
 
 #header-search::placeholder {
-    padding-left: 20px;
+    padding-right: 25px;
+
+    text-align: center;
 }
 
 #btn-search {
+    height: 15px;
+    
+    position: relative;
 
-    height: 25px;
-    margin-left: -100px;
-
+    z-index: 1px;
+    top: -14px;
+    left: 17px;
 }
+
+#btn-search:hover {cursor: pointer;}
 
 /*우측 상단 버튼*/
 header ul {
@@ -60,4 +74,3 @@ header ul {
 
     justify-content: space-around;
 }
-
