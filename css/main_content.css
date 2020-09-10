@@ -20,3 +20,142 @@ section > div {
 
     border: 1px solid #D8D8D8;
 }
+
+
+/*프로필*/
+
+.content-profile {
+    height: 50px;
+
+    padding: 5px 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.content-profile div:hover {cursor: pointer;}
+
+#content-profile_img {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 75px;
+    border: 2px solid #E1306C;
+
+    background-image: url('../img/img3.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#content_id {
+    margin-left: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#content_setting {
+    width: 20px;
+    height: 20px;
+
+    margin-left: 420px;
+
+    background-image: url('../icon/see_more.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/*사진*/
+
+.content-img {
+    width: 612px;
+    height: 612px;
+
+    background-image: url('../img/yuqi.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+
+.content-img2 {
+    width: 612px;
+    height: 612px;
+
+    background-image: url('../img/img4.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+
+/*좋아요 저장하기*/
+
+.content-like {
+    height: 30px;
+
+    padding: 10px 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.content-like img{
+    width: 25px;
+    height: 25px;
+
+    margin-left: 20px;
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content-like img[like="1"] {
+    margin: 0px;
+}
+.content-like img[like="3"] {
+    width: 30px;
+    height: 30px;
+}
+
+.content-like img[like="4"] {
+    margin-left: 400px;
+}
+
+.content-like img:hover { cursor: pointer;}
+
+
+
+
+
+/*좋아요 개수*/
+
+.content-like-number {
+    height: 18px;
+
+    font-weight: bold;
+    font-size: 13px;
+
+    padding-left: 20px;
+}
+
+
+
+/*댓글 수 */ 
+.content-writed-time {
+    height: 19px;
+
+    margin-top: 5px;
+    padding-left: 20px;
+
+    font-size: 10px;
+    color: gray;
+
+}

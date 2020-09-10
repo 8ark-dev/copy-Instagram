@@ -89,22 +89,25 @@ body {
 }
 
 .login-item::placeholder {
-    padding-left: 10px;
+    padding-left: 15px;
     font-size: 11px;
 }
 
-.login-item[type=password]{
+#login-pw-box{
     width: 194px;
 
     padding-right: 100px;
 
     margin-right: 10px;
+    margin-left: 33px;
 }
 
-.hidden-pw {
+#hidden-pw_label {
     visibility: hidden;
     width: 100px;
-    height: 39px;
+    height: 37px;
+
+    z-index: 2px;
 
     margin: 0px;
     margin-left: -111px;
@@ -121,9 +124,16 @@ body {
     background-color: #FAFAFA;
 
     font-size: 12px;
+    line-height: 39px;
 }
 
-.hidden-pw:hover { cursor: pointer;}
+#login-pw {
+    display: flex;
+
+    align-items: center;
+}
+
+#hidden-pw_label:hover { cursor: pointer;}
 
 #btn-login {
     width: 290px;

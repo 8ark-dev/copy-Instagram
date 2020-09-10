@@ -20,12 +20,12 @@
     <body>
         <header>
             <div>
-                <img src="../img/logo_instagram.png" id="header-logo">
+                <img src="../img/logo_instagram.png" id="header-logo"> 
             </div>
 
             <div class="header-item">
                 <input type="text" id="header-search" placeholder="검색">
-                <img src="../img/search.png" id="btn-search">
+                <img src="../icon/search.png" id="btn-search">
             </div>
 
             <div>
@@ -44,10 +44,12 @@
                 <!--스토리-->
                 <div class="content-story">
                     <ul>
-                        <li class="story">
+                        <li>
+                            <img class="story">
                             <p>__8ark</p>
                         </li>
-                        <li class="story">
+                        <li>
+                            <img class="story">
                             <p>yoo_jin_49</p>
                         </li>
                     </ul>
@@ -57,16 +59,25 @@
                 <div class="content">
                     <div id="content_8ark">
                         <!--프로필-->
-                        <div></div>
+                        <div class="content-profile">
+                            <div id="content-profile_img"></div>
+                            <div id="content_id">gidle.yuqi</div>
+                            <div id="content_setting"></div>
+                        </div>
 
                         <!--사진-->
-                        <div></div>
+                        <div class="content-img"></div>
 
                         <!--좋아요, 저장하기-->
-                        <div></div>
+                        <div class="content-like">
+                            <img src="../icon/like.png" like="1">
+                            <img src="../icon/speech.png"like="2">
+                            <img src="../icon/dm.png"like="3">
+                            <img src="../icon/save.png"like="4">
+                        </div>
                     
                         <!--좋아요 %개-->
-                        <div></div>
+                        <div class="content-like-number"></div>
                     
                         <!--게시글-->
                         <div></div>
@@ -75,7 +86,42 @@
                         <div></div>
                     
                         <!--시간-->
+                        <div class="content-writed-time"></div>
+                    </div>
+                    
+                </div>
+
+                <div class="content">
+                    <div id="content_8ark">
+                        <!--프로필-->
+                        <div class="content-profile">
+                            <div id="content-profile_img"></div>
+                            <div id="content_id">__8ark</div>
+                            <div id="content_setting"></div>
+                        </div>
+
+                        <!--사진-->
+                        <div class="content-img2"></div>
+
+                        <!--좋아요, 저장하기-->
+                        <div class="content-like">
+                            <img src="../icon/like.png" like="1">
+                            <img src="../icon/speech.png"like="2">
+                            <img src="../icon/dm.png"like="3">
+                            <img src="../icon/save.png"like="4">
+                        </div>
+                    
+                        <!--좋아요 %개-->
+                        <div class="content-like-number"></div>
+                    
+                        <!--게시글-->
                         <div></div>
+                    
+                        <!--댓글-->
+                        <div></div>
+                    
+                        <!--시간-->
+                        <div class="content-writed-time"></div>
                     </div>
                     
                 </div>
@@ -98,5 +144,8 @@
 
          <!--<script src="../js/list-img.js"> </script>-->
          <script src = "../js/story-img.js"></script>
+         <script src = "../js/content-btn.js"></script>
+         <script src = "../js/counter.js"></script>
+         <script src = "../js/content-link.js"></script>
     </body>
 </html>

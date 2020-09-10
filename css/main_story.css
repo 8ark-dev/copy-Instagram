@@ -21,22 +21,21 @@
     flex-direction: row;
 }
 
-.content-story li {
+.story {
 
     width: 55px;
     height: 55px;
 
-    margin: 15px;
-    margin-top: 0px;
+    margin: 0px 15px;
 
     border: 2px solid #E1306C;
     border-radius: 75px;
 }
 
 .content-story li p {
-    margin-top: 65px;
+    margin-top: 5px;
 
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
 }
 

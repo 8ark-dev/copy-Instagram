@@ -1,8 +1,7 @@
-const img = document.getElementsByClassName('story');
+const img_tag = document.getElementsByClassName('story');
 const push_img = ['../img/img1.jpg', '../img/img2.jpg'];
 
-for(let i =0; i<img.length; i++) {
-    img[i].style.background = push_img[i];
-    console.log(push_img[i]);
-    console.log(img[i].style.background);
+for(let i =0; i<img_tag.length; i++) {
+    img_tag[i].src = push_img[i];
+    
 }

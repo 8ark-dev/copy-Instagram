@@ -5,7 +5,7 @@ const loginBox = document.querySelectorAll('.login-item'); // [0] : id , [1] : p
 //for change style
 const fb = document.querySelector('#login-fb');
 const hidden = document.querySelector('#hidden-login');
-const hidden2 = document.querySelector('.hidden-pw');
+const hidden2 = document.querySelector('#hidden-pw_label');
 
 
 // regexp
