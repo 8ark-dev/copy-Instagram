@@ -12,7 +12,7 @@ section > div {
 
 .content {
     width: 612px;
-    height: 780px;
+    height: auto;
 
     margin-top: 30px;
     
@@ -48,12 +48,13 @@ section > div {
     background-repeat: no-repeat;
 }
 
-#content_id {
+#content-id {
     margin-left: 20px;
 
     font-size: 14px;
     font-weight: bold;
 }
+
 
 #content_setting {
     width: 20px;
@@ -120,20 +121,66 @@ section > div {
 .content-like img[like="1"] {
     margin: 0px;
 }
+
 .content-like img[like="3"] {
     width: 30px;
     height: 30px;
 }
 
 .content-like img[like="4"] {
-    margin-left: 400px;
+    margin-left: 430px;
 }
 
 .content-like img:hover { cursor: pointer;}
 
 
 
+/*게시물*/
+.content-main {
+    height: 20px;
+    margin-top: 5px;
 
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.content-id {
+    margin-left: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.content-article {
+    height: 20px;
+
+    margin-left: 7px;
+
+    line-height: 20px;
+
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    white-space:pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content-hidden {
+    visibility: hidden;
+
+    margin-left: 5px;
+
+    font-size: 12px;
+    line-height: 15px;
+
+    color: gray;
+
+}
+
+.content-hidden:hover {cursor: pointer;}
 
 /*좋아요 개수*/
 
@@ -146,9 +193,55 @@ section > div {
     padding-left: 20px;
 }
 
+/*댓글 수*/
+.content-comment {
+    padding: 5px 20px;
+    height: auto;
+}
 
+.comment-number {
+    height: 20px;
 
-/*댓글 수 */ 
+    font-size: 13px;
+    line-height: 15px;
+
+    color: gray;
+}
+
+.comment-number:hover { cursor: pointer;}
+
+.comment {
+    height: auto;
+
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.comment ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: flex-start;
+
+    flex-direction: column;
+}
+
+.comment ul li { margin-top: 5px;}
+
+.author {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.author-comment {
+    margin-left: 3px;
+
+    font-size: 13px;
+}
+
+.comment:hover { cursor: pointer;}
+
+/*게시 시간 */ 
 .content-writed-time {
     height: 19px;
 
