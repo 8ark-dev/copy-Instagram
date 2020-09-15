@@ -17,13 +17,13 @@ header{
 }
 
 /*왼쪽 상단 로고*/
-#header-logo {
+#header-logo-img {
     width: 100px;
 
     background-size: contain;
 }
 
-#header-logo:hover {cursor: pointer;}
+#header-logo-img:hover {cursor: pointer;}
 
 .header-item {
     width: 267px;
@@ -72,6 +72,27 @@ header ul {
     width: 150px;
 
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
-    justify-content: space-around;
+header ul li img{
+    width: 23px;
+    height: 23px;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+}
+
+header ul li:hover { cursor: pointer;}
+
+/*우측 상단 프로필*/
+.account-btn {
+    width: 23px;
+    height: 23px;
+
+    border-radius: 75px;
+    border: 1px solid gray;
 }

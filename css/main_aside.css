@@ -1,18 +1,196 @@
+
 aside {
-    margin-top: 30px;
-    position: relative;
+    height: 100%;
+
+    top: 54px;
+    position: sticky;
+    padding-top: 30px;
+
 }
-/*
-aside > div {
-    position: fixed;
-}*/
 
+/*사이드 프로필*/
 .aside-acount {
+    
     width: 293px;
-    height: 200px;
+    height: 56px;
 
-    background-color: #FFF;
+    padding: 20px 0px;
 
-    border: 1px solid #D8D8D8;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.aside-acount-profile {
+    width: 50px;
+    height: 50px;
+
+    margin: 0px 15px;
+    margin-right: 20px;
+
+    border: 2px solid #E1306C;
+    border-radius: 75px;
+    
+}
+
+.aside-acount-id {
+
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.aside-acount-status {
+    margin-top: 5px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    color: gray;
+
+}
+
+
+/*회원님을 위한 추천*/
+
+.aside-recommend {
+    
+    height: auto;
+
+    margin-top: 20px;
+
+
+}
+
+.aside-recommend-txt {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    line-height: 20px;
+}
+
+.aside-recommend-txt div[recommend_txt="1"] {
+    margin-left: 20px;
+    color: gray;
+
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+
+.aside-recommend-txt div[recommend_txt="2"] {
+    margin-left: 120px;
+
+    color: black;
+    
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.aside-recommend-txt div[recommend_txt="2"]:hover { cursor:pointer;}
+
+
+
+/*추천계정*/
+
+.aside-recommend-photo{
+    width: 30px;
+    height: 30px;
+
+    margin: 8px 15px;
+    margin-right: 20px;
+
+    border-radius: 75px;
+
+}
+
+.aside-recommend-id{
+
+    padding-top: 5px;
+
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+    line-height: 23px;
+}
+
+.aside-recommend-status {
+
+    margin-top: -5px;
+    color: gray;    
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    line-height: 23px;
+    
+}
+
+.aside-recommend-follow {
+
+    margin-left: 30px;
+    color: #0095F6;
+
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.aside-recommend-follow:hover { cursor: pointer;}
+
+
+.aside-recommend-acount li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.aside-recommend-acount li div {
+    width: 150px;
+    height: 51px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    flex-direction: column;
+}
+
+
+/*소개*/
+
+.aside-help {
+    width: 320px;
+
+    margin-top: 20px;
+    margin-left: 20px;
+
+    font-size: 11px;
+    opacity: 60%;
+
+    color: gray;
+}
+
+.aside-help-list{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+.aside-help-list li { margin-bottom: 5px;}
+
+.aside-help-list li:hover {cursor: pointer;}
+
+.aside-copyright {
+    margin-top: 20px;
+    margin-left: 20px;
+
+    font-size: 11px;
+    opacity: 60%;
+
+    color: gray;
 
 }

@@ -1,8 +1,11 @@
-const list = document.querySelector('.list-container');
-const img = ['../img/btn_home.png'];
+const btn_list = document.querySelector('.list-container');
+const img = ['../icon/home2.png', '../icon/dm.png', '../icon/compass.png', '../icon/like.png', ''];
 
-//for(let i =0; i<list.children.length; i++) {
- //   list.children[i].innerHTML = '<img src =' + img[i] + '>';
-//}
+let i =0;
+for(i =0; i<4; i++) {
+   btn_list.innerHTML += '<li><img src =' + img[i] + '></li>';
+}
 
-list.children[0].innerHTML = '<img src =' + img[0] + '>';
+
+//마지막 css 설정
+btn_list.innerHTML += '<li><img class="account-btn" src="../img/img1.jpg"></li>';

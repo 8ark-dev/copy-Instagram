@@ -10,7 +10,7 @@ function Person(author, author_comment) {
 } 
 
 let person1 = new Person('__8ark', '20200915');
-let person2 = new Person('jennierubyjane', '23:25');
+let person2 = new Person('yoo_jin_49', '23:25');
 
 const person_arr = [person1, person2];
 

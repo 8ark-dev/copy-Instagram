@@ -19,8 +19,8 @@
 
     <body>
         <header>
-            <div>
-                <img src="../img/logo_instagram.png" id="header-logo"> 
+            <div class="header-logo">
+                <img src="../img/logo_instagram.png" id="header-logo-img"> 
             </div>
 
             <div class="header-item">
@@ -28,14 +28,8 @@
                 <img src="../icon/search.png" id="btn-search">
             </div>
 
-            <div>
-                <ul class="list-container">
-                    <li>A</li>
-                    <li>B</li>
-                    <li>C</li>
-                    <li>D</li>
-                    <li>E</li>
-                </ul>
+            <div class="list-btn">
+                <ul class="list-container"></ul>
             </div>
         </header>
 
@@ -139,19 +133,41 @@
             <aside>
                 <!--내 계정-->
                 <div class="aside-acount">
-    
+                    <img class="aside-acount-profile" src="../img/img1.jpg"></img>
+                   
+                    <div class="aside-acount-txt">
+                        <div class="aside-acount-id">____3856</div>
+                        <div class="aside-acount-status">hi</div>
+                    </div>
                 </div>
     
                 <!--회원님을 위한 추천-->
                 <div class="aside-recommend">
+                    <div class="aside-recommend-txt">
+                        <div recommend_txt = 1>회원님을 위한 추천</div>
+                        <div recommend_txt = 2>모두 보기</div>
+                    </div>
     
+                    <div class="aside-recommend-profile">
+                        <ul class="aside-recommend-acount"></ul>
+                    </div>
                 </div>
+
+                <!--소개..-->
+
+                <div class="aside-help">
+                    <div>
+                        <ul class="aside-help-list"></ul>
+                    </div>
+                </div>
+
+                <div class="aside-copyright">© 2020 INSTAGRAM FROM FACEBOOK</div>
             </aside>
         </section>
 
 
 
-         <!--<script src="../js/list-img.js"> </script>-->
+         <script src="../js/list-img.js"> </script>
          <script src = "../js/story.js"></script>
          <script src = "../js/counter.js"></script>
 
@@ -160,5 +176,7 @@
          <script src = "../js/content-overchar.js"></script>
 
          <script src = "../js/comment.js"></script>
+
+         <script src = "../js/aside.js"></script>
     </body>
 </html>
